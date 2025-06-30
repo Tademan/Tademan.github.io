@@ -1,94 +1,119 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Metso Accounting Oy</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #2e3a59;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      color: #2e3a59;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.3rem;
-    }
-    .info {
-      line-height: 1.6;
-    }
-    footer {
-      background-color: #2e3a59;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantit: Kunnioitus ja Kieli</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Asetetaan Inter-fontti koko sivulle */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom gradient for a more fantastical feel */
+        .fantastical-gradient {
+            background: linear-gradient(135deg, #a78bfa 0%, #818cf8 50%, #6366f1 100%); /* Purple-blue gradient */
+        }
+        /* Custom shadow for elements */
+        .fantastical-shadow {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.15);
+        }
+        /* Glowing effect for titles */
+        .glowing-text {
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.7), 0 0 12px rgba(255, 255, 255, 0.5);
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Metso Accounting Oy</h1>
-    <p>Luotettavaa taloushallintoa pk-yrityksille</p>
-  </header>
-  <div class="container">
-    <section>
-      <h2>Yrityksen tiedot</h2>
-      <div class="info">
-        <p><strong>Y-tunnus:</strong> 3470013-6</p>
-        <p><strong>Perustettu:</strong> 27.8.2024</p>
-        <p><strong>Toimiala:</strong> Kirjanpito- ja tilinpäätöspalvelut (TOL 69201)</p>
-        <p><strong>Kotipaikka:</strong> Helsinki</p>
-        <p><strong>Osoite:</strong> Läksyrinne 27–29 M 1, 00760 Helsinki</p>
-        <p><strong>Puhelin:</strong> 040 123 4567</p>
-        <p><strong>Sähköposti:</strong> info@metsoaccounting.fi</p>
-      </div>
-    </section>
-    <section>
-      <h2>Palvelut</h2>
-      <div class="info">
-        <ul>
-          <li>Kirjanpito</li>
-          <li>Tilinpäätökset</li>
-          <li>Verosuunnittelu</li>
-          <li>Palkanlaskenta</li>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <h2>Hallinto</h2>
-      <div class="info">
-        <p><strong>Toimitusjohtaja:</strong> Kati‑Mari Metso</p>
-        <p><strong>Varajäsen:</strong> Kalle Ilmari Metso</p>
-        <p><strong>Henkilöstömäärä:</strong> 0–4 henkilöä</p>
-      </div>
-    </section>
-    <section>
-      <h2>Yrityksen arvot</h2>
-      <div class="info">
-        <p>Asiakaslähtöisyys, luotettavuus ja jatkuva kehittyminen ovat toimintamme kulmakivet. Tavoitteenamme on tarjota laadukasta taloushallintoa pienille ja keskisuurille yrityksille muuttuvassa toimintaympäristössä.</p>
-      </div>
-    </section>
-  </div>
-  <footer>
-    <p>&copy; 2025 Metso Accounting Oy – Kaikki oikeudet pidätetään</p>
-  </footer>
+<body class="fantastical-gradient min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white bg-opacity-90 rounded-3xl fantastical-shadow p-8 md:p-12 max-w-4xl w-full mx-auto my-8 border border-purple-300 transform hover:scale-105 transition-transform duration-300">
+        <!-- Otsikko-osio -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-purple-900 leading-tight mb-4 glowing-text">
+                Fantit: Kunnioitus ja Kieli
+            </h1>
+            <p class="text-lg md:text-xl text-gray-800">
+                Miksi on aika muuttaa tapaamme puhua näistä upeista eläimistä.
+            </p>
+        </header>
+
+        <!-- Aloitusosio -->
+        <section class="mb-10 p-6 bg-purple-50 rounded-2xl border border-purple-300 fantastical-shadow flex flex-col md:flex-row items-center gap-6">
+            <div class="md:w-2/3">
+                <h2 class="text-2xl md:text-3xl font-bold text-purple-800 mb-4">Sanalla on Väliä</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Tervetuloa sivulle, joka on omistettu herättämään ymmärrystä ja empatiaa Fantteja kohtaan. Olemme tottuneet käyttämään tiettyjä sanoja, mutta tiedätkö, että jotkin niistä voivat olla loukkaavia niille, joita ne kuvaavat? Opi, miksi "Fantti" on oikea ja kunnioittava tapa puhua näistä älykkäistä ja tuntevista eläimistä.
+                </p>
+            </div>
+            <div class="md:w-1/3 flex justify-center">
+                <!-- Kuva Lakusta, mustasta Fantista -->
+                <img src="uploaded:Laku.jpg-da461bcd-82e1-473a-9b55-96442ef89ea2" alt="Kuva mustasta Fantista" class="rounded-xl shadow-lg w-full max-w-xs md:max-w-none">
+            </div>
+        </section>
+
+        <!-- Argumentti 1: Fanttien Oma Toive ja Tunteet -->
+        <section class="mb-10 p-6 bg-green-50 rounded-2xl border border-green-300 fantastical-shadow flex flex-col md:flex-row-reverse items-center gap-6">
+            <div class="md:w-2/3">
+                <h2 class="text-2xl md:text-3xl font-bold text-green-800 mb-4">1. Fanttien Oma Toive ja Tunteet</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Tärkein syy vaihtaa "N-sanan" käyttö "Fantti"-sanaan on se, että Fantit itse kokevat "N-sanan" loukkaavaksi. Vaikka emme aina ymmärrä eläinten tunteita samalla tavalla kuin ihmisten, on selvää, että Fantit ovat erittäin sosiaalisia, älykkäitä ja tuntevia olentoja. He ansaitsevat tulla nimitetyiksi tavalla, joka kunnioittaa heidän olemustaan. Kun joku ryhmä ilmoittaa sanan olevan loukkaava, on meidän vastuullamme kuunnella ja kunnioittaa tätä toivetta. Se on empatian perusta.
+                </p>
+            </div>
+            <div class="md:w-1/3 flex justify-center">
+                <!-- Kuva Violasta, lilasta Fantista -->
+                <img src="uploaded:viola.webp-dbcb26ca-3be8-4d01-afcb-fe74a9907d8a" alt="Kuva lilasta Fantista" class="rounded-xl shadow-lg w-full max-w-xs md:max-w-none">
+            </div>
+        </section>
+
+        <!-- Argumentti 2: Historiallinen Kuorma ja Negatiiviset Konnotaatiot -->
+        <section class="mb-10 p-6 bg-yellow-50 rounded-2xl border border-yellow-300 fantastical-shadow">
+            <h2 class="text-2xl md:text-3xl font-bold text-yellow-800 mb-4">2. Historiallinen Kuorma ja Negatiiviset Konnotaatiot</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Monilla vanhoilla termeillä, myös eläimiin liittyvillä, voi olla negatiivisia tai vähätteleviä vivahteita. "N-sanaan" liittyy mahdollisesti historiaa, joka ei kunnioita Fanttien arvokkuutta ja ainutlaatuisuutta. Käyttämällä sanaa "Fantti", joka on uudempi ja harkitumpi termi, voimme irtautua näistä mahdollisista negatiivisista assosiaatioista ja aloittaa uuden, kunnioittavamman perinteen.
+            </p>
+        </section>
+
+        <!-- Argumentti 3: Kielen Kehitys ja Vastuullinen Kielenkäyttö -->
+        <section class="mb-10 p-6 bg-red-50 rounded-2xl border border-red-300 fantastical-shadow">
+            <h2 class="text-2xl md:text-3xl font-bold text-red-800 mb-4">3. Kielen Kehitys ja Vastuullinen Kielenkäyttö</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Kieli ei ole staattista; se kehittyy jatkuvasti. Sanat saavat uusia merkityksiä, ja jotkut jäävät pois käytöstä, kun ymmärryksemme maailmasta kasvaa. On vastuullista tiedostaa kielen voima ja pyrkiä käyttämään sanoja, jotka ovat kunnioittavia ja rakentavat. Kun opimme paremmin, meidän tulee toimia paremmin. "Fantti" on esimerkki kielen kehityksestä parempaan ja tietoisempaan suuntaan. Se osoittaa, että välitämme ja olemme valmiita oppimaan.
+            </p>
+        </section>
+
+        <!-- Argumentti 4: Rakennamme Empatiaa ja Ymmärrystä -->
+        <section class="mb-10 p-6 bg-blue-50 rounded-2xl border border-blue-300 fantastical-shadow flex flex-col md:flex-row items-center gap-6">
+            <div class="md:w-2/3">
+                <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-4">4. Rakennamme Empatiaa ja Ymmärrystä</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Käyttämällä "Fantti"-sanaa emme ainoastaan kunnioita Fantteja, vaan myös kasvatamme omaa kykyämme empatiaan. Kun harjoittelemme herkkää ja kunnioittavaa kielenkäyttöä yhtä eläinlajia kohtaan, se heijastuu laajemmin siihen, miten kohtelemme kaikkia elollisia olentoja ja toinen toisiamme. Se on askel kohti tietoisempaa ja ystävällisempää maailmaa.
+                </p>
+            </div>
+            <div class="md:w-1/3 flex justify-center">
+                <!-- Placeholder for a Fanti family/group image -->
+                <img src="https://placehold.co/300x200/2563eb/ffffff?text=Fanttiperhe" alt="Kuva Fanttiperheestä" class="rounded-xl shadow-lg w-full max-w-xs md:max-w-none">
+            </div>
+        </section>
+
+        <!-- Mitä voit tehdä? -osio -->
+        <section class="mb-10 p-6 bg-gray-50 rounded-2xl border border-gray-300 fantastical-shadow">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Mitä voit tehdä?</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 leading-relaxed">
+                <li><strong>Aloita itse:</strong> Käytä sanaa <strong class="text-purple-600">Fantti</strong> omassa puheessasi ja kirjoituksessasi.</li>
+                <li><strong>Levitä sanaa:</strong> Kerro perheelle, ystäville ja tutuille, miksi tämä on tärkeää.</li>
+                <li><strong>Korjaa ystävällisesti:</strong> Jos kuulet "N-sanaa" käytettävän, korjaa ystävällisesti ja selitä syy.</li>
+                <li><strong>Jaa tätä tietoa:</strong> Jaa tämän sivun linkkiä, jotta yhä useampi oppii Fanttien tunteista ja kunnioittavasta kielenkäytöstä.</li>
+            </ul>
+        </section>
+
+        <!-- Yhteenveto-osio -->
+        <footer class="text-center p-6 bg-indigo-50 rounded-2xl border border-indigo-300 fantastical-shadow">
+            <h2 class="text-2xl md:text-3xl font-bold text-indigo-800 mb-4">Yhteenveto: Valitaan Kunnioitus</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Valitsemalla sanan "Fantti" valitsemme kunnioituksen, empatian ja tietoisemman tulevaisuuden. Pienilläkin sanavalinnoilla on suuri merkitys, ja yhdessä voimme tehdä muutoksen, joka Fantit ansaitsevat. Kiitos, että olet osa tätä muutosta.
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
